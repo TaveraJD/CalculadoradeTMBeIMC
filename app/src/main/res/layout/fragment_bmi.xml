@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".BmiFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/titimc"
+        android:textColor="@color/secondary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--Peso-->
+            <LinearLayout
+                android:id="@+id/lay_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_peso"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/peso"
+                    android:textColor="@color/primary"
+                    android:textSize="21sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/et_peso"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:hint="@string/kg"
+                    android:textColorHint="@color/watermark"
+                    android:textColor="@color/secondary"
+                    android:textSize="21sp"
+                    android:background="@drawable/custom_edittext" />
+
+            </LinearLayout>
+
+            <!--Altura-->
+            <LinearLayout
+                android:id="@+id/lay_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_altura"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/altura"
+                    android:textColor="@color/primary"
+                    android:textSize="21sp"
+                    android:gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/et_altura"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:hint="@string/met"
+                    android:textColorHint="@color/watermark"
+                    android:textColor="@color/secondary"
+                    android:textSize="21sp"
+                    android:background="@drawable/custom_edittext" />
+
+            </LinearLayout>
+
+            <!--Calcular-->
+            <Button
+                android:id="@+id/bt_calcular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/calcular"
+                android:textAllCaps="true"
+                android:backgroundTint="@color/secondary"
+                app:cornerRadius="15dp" />
+
+            <!--Resultado-->
+            <TextView
+                android:id="@+id/tv_resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:textColor="@color/primary"
+                android:textSize="23sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

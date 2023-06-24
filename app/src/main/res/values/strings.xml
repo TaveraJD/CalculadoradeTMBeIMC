@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculadora de TMB e IMC</string>
+
+    <string name="tittmb">Calculadora de \n Gasto Metabólico Total</string>
+    <string name="titimc">Calculadora de \n Índice de Masa Corporal</string>
+
+    <string name="peso">Peso (kg)*</string>
+    <string name="altura">Altura (cm)*</string>
+    <string name="edad">Edad (a)*</string>
+    <string name="kg">kilogramos</string>
+    <string name="cm">centímetros</string>
+    <string name="met">metros</string>
+    <string name="años">años</string>
+    <string name="sexo">Sexo</string>
+    <string name="m">M</string>
+    <string name="f">F</string>
+    <string name="naf">Nivel de Actividad Física</string>
+
+    <string name="calcular">Calcular</string>
+</resources>

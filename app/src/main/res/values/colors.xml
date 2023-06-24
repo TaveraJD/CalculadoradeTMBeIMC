@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#F08500</color>
+    <color name="secondary">#1571C5</color>
+    <color name="background">#35393C</color>
+    <color name="onPrimary">#A05500</color>
+
+    <color name="watermark">#B3B3B3</color>
+
+    <color name="selected_item">#FF242527</color>
+    <color name="nonselected_item">#AA242527</color>
+</resources>
